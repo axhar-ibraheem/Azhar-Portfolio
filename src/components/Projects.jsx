@@ -28,7 +28,7 @@ const Projects = () => {
   return (
     <Wrapper id="projects" classes = "bg-lime-100 py-10">
       <SectionTitle classes="text-center mb-5" title="projects" />
-      <div className="max-w-6xl w-11/12 mx-auto grid lg:grid-cols-3 md:grid-cols-2 gap-6 rounded-3xl h-3/4 py-10">
+      <div className="max-w-6xl w-11/12 mx-auto grid lg:grid-cols-3 md:grid-cols-2 gap-6 rounded-3xl h-3/4 lg:py-10">
         {projects.map((project, index) => (
           <SingleProject key={index} projectInfo={project} />
         ))}

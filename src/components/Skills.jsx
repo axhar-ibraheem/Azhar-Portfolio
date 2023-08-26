@@ -79,8 +79,8 @@ const skills = [
 const Skills = () => {
   return (
     <Wrapper id="skills" classes="bg-purple-100 py-10">
-      <SectionTitle classes="text-center mb-5" title="skills" />
-      <div className="flex flex-wrap max-w-6xl w-11/12 mx-auto  content-center items-center h-3/4 py-10 mt-6 gap-4 md:gap-10">
+      <SectionTitle classes="text-center lg:mb-5" title="skills" />
+      <div className="flex flex-wrap max-w-6xl w-11/12 mx-auto  content-center items-center h-3/4 lg:py-10 mt-6 gap-4 md:gap-10">
         {skills.map((skill, index) => (
           <div key={index} className="md:mb-5">
             <p className="text-left font-bold text-gray-800 md:text-2xl mb-2 capitalize">
