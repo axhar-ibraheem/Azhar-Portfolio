@@ -25,13 +25,13 @@ const SingleProject = (props) => {
           />
           <div className="absolute transition ease-in-out delay-400 duration-700 opacity-0 group-hover:opacity-100 z-10 top-[50%] left-[50%] translate-y-[-50%] translate-x-[-50%] text-center">
             <a
-              href="#"
+              href={projectInfo.link}
               className="bg-blue-200 text-gray-900 px-2 py-1 inline-block text-xl rounded-sm capitalize mb-3"
             >
               live site
             </a>
             <a
-              href="#"
+              href= {projectInfo.sourceCode}
               className="bg-blue-200 text-gray-900 px-2 py-1 inline-block text-xl rounded-sm capitalize"
             >
               source code

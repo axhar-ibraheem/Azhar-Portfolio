@@ -6,21 +6,29 @@ const projects = [
     title: "CSS Button Generator",
     technologies: ["React", "HTML", "CSS"],
     img: "button",
+    link: "https://axhar-ibraheem.github.io/CSS-Button-Generator/",
+    sourceCode: "https://github.com/axhar-ibraheem/CSS-Button-Generator"
   },
   {
     title: "Ecommerce App",
     technologies: ["React", "HTML", "React Bootstrap"],
     img: "ecommerce",
+    link: "https://ecommerce-app-axhar.netlify.app/home",
+    sourceCode: "https://github.com/axhar-ibraheem/React-Ecommerce-App"
   },
   {
     title: "Expense Tracker",
     technologies: ["React", "HTML", "React Bootstrap"],
     img: "expense",
+    link: "https://expense-tracker-axhar.netlify.app/",
+    sourceCode: "https://github.com/axhar-ibraheem/React-Expense-Tracker",
   },
   {
     title: "MailBox Client",
     technologies: ["React", "HTML", "React Bootstrap"],
     img: "mail",
+    link: "https://mailbox-client-axhar.netlify.app/auth",
+    sourceCode: "https://github.com/axhar-ibraheem/React-Mailbox-client",
   },
 ];
 

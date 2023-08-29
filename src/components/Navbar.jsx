@@ -1,4 +1,4 @@
-import { FaBars, FaFolderOpen } from "react-icons/fa";
+import { FaBars, FaFolderOpen, FaHome } from "react-icons/fa";
 import { BiHome, BiSolidContact } from "react-icons/bi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { GrTechnology } from "react-icons/gr";
@@ -9,7 +9,7 @@ const navLinks = [
   {
     id: "#home",
     title: "home",
-    icon: <BiHome  className="text-2xl text-yellow-800 inline-block"/>
+    icon: <FaHome  className="text-2xl text-yellow-800 inline-block"/>
   },
   {
     id: "#about",
@@ -19,7 +19,7 @@ const navLinks = [
   {
     id: "#skills",
     title: "skills",
-    icon: <GrTechnology className="text-2xl text-orange-700 inline-block"/>
+    icon: <GrTechnology className="text-2xl text-orange-900 inline-block"/>
   },
   {
     id: "#projects",
@@ -54,7 +54,7 @@ const Navbar = () => {
         <div className="max-w-6xl w-11/12 mx-auto flex items-center justify-between">
           <div className="">
             <h2 className="text-3xl font-bold text-yellow-800 drop-shadow-md tracking-wider ">
-              <img src={logo} className="w-11" alt=""  /> <span className="text-3xl text-blue-700"></span>
+              <img src={logo} className="w-9" alt=""  /> <span className="text-3xl text-blue-700"></span>
             </h2>
           </div>
           <ul className="place-items-center px-3 md:flex hidden gap-10">
@@ -62,7 +62,8 @@ const Navbar = () => {
               <li
                 key={navlink.id}
                 onClick={() => scrollToSection(`${navlink.id}`, 4 * 16)}
-                className="text-xl transition ease-linear delay-400 duration-300 hover:text-yellow-600  hover:-translate-y-2 capitalize tracking-wider cursor-pointer font-semibold text-cyan-900"
+                className="text-xl transition ease-linear delay-400 duration-300 hover:text-yellow-600  
+               capitalize tracking-wider cursor-pointer font-semibold text-rose-950"
               >
                 {navlink.title}
               </li>
@@ -90,9 +91,9 @@ const Navbar = () => {
               key={navlink.id}
               className="text-xl ps-5 py-2 cursor-pointer transition ease-in-out delay-400 duration-700 hover:bg-indigo-100"
             >
-              <p className="flex items-center gap-4  cursor-pointer">
+              <p className="flex items-center gap-4 cursor-pointer">
                 {navlink.icon}
-                <span className="capitalize tracking-wider">
+                <span className="capitalize tracking-wider font-semibold">
                   {navlink.title}
                 </span>
               </p>
