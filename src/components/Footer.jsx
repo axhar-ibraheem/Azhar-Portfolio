@@ -19,7 +19,7 @@ const Footer = () => {
             <SiHashnode  className="text-slate-50 hover:text-amber-500"  />
           </a>
         </div>
-        <p className="text-lg tracking-wide text-stone-50">
+        <p className="md:text-lg tracking-wide text-stone-50">
           &copy; 2023 Mohammad Azhar. All rights reserved.
         </p>
       </div>

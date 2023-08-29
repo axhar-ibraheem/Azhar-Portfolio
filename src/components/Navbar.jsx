@@ -52,7 +52,7 @@ const Navbar = () => {
     <>
       <nav className="h-16 fixed w-full flex align-middle z-10  bg-gradient-to-r  from-stone-100 to-stone-200 shadow-violet-200 shadow-md">
         <div className="max-w-6xl w-11/12 mx-auto flex items-center justify-between">
-          <div className="">
+          <div>
             <h2 className="text-3xl font-bold text-yellow-800 drop-shadow-md tracking-wider ">
               <img src={logo} className="w-9" alt=""  /> <span className="text-3xl text-blue-700"></span>
             </h2>
@@ -93,7 +93,7 @@ const Navbar = () => {
             >
               <p className="flex items-center gap-4 cursor-pointer">
                 {navlink.icon}
-                <span className="capitalize tracking-wider font-semibold">
+                <span className="capitalize tracking-wider">
                   {navlink.title}
                 </span>
               </p>
