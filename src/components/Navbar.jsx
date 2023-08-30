@@ -1,8 +1,8 @@
 import { FaBars, FaFolderOpen, FaHome } from "react-icons/fa";
-import { BiHome, BiSolidContact } from "react-icons/bi";
+import { BiSolidContact } from "react-icons/bi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { GrTechnology } from "react-icons/gr";
-import { GiCrossMark } from "react-icons/gi";
+import { GiCrossMark, GiToolbox } from "react-icons/gi"; 
 import { useState } from "react";
 import logo from "../assets/icons8-a-96.png"
 const navLinks = [
@@ -14,22 +14,22 @@ const navLinks = [
   {
     id: "#about",
     title: "about",
-    icon: <BiSolidContact className="text-2xl text-blue-800 inline-block"/>
+    icon: <BiSolidContact className="text-2xl  text-yellow-800 inline-block"/>
   },
   {
     id: "#skills",
     title: "skills",
-    icon: <GrTechnology className="text-2xl text-orange-900 inline-block"/>
+    icon: <GiToolbox className="text-2xl  text-yellow-800 inline-block"/>
   },
   {
     id: "#projects",
     title: "projects",
-    icon : <FaFolderOpen className="text-2xl text-red-800 inline-block"/>
+    icon : <FaFolderOpen className="text-2xl  text-yellow-800 inline-block"/>
   },
   {
     id: "#contact",
     title: "contact",
-    icon: <BsFillPersonLinesFill className="text-2xl text-purple-800 inline-block"/>
+    icon: <BsFillPersonLinesFill className="text-2xl  text-yellow-800 inline-block"/>
   },
 ];
 const Navbar = () => {
