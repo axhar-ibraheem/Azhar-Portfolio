@@ -2,7 +2,7 @@ import eccomerceImg from "../assets/ecommere.png";
 import buttongeneratorImg from "../assets/button-generator.png";
 import mailboxImg from "../assets/mail-box.png";
 import expenseTrackerImg from "../assets/expense-tracker.png";
-
+import jobquestImg from "../assets/jobquest.png";
 const SingleProject = (props) => {
   const { projectInfo } = props;
   const img =
@@ -12,7 +12,9 @@ const SingleProject = (props) => {
       ? eccomerceImg
       : projectInfo.img === "expense"
       ? expenseTrackerImg
-      : mailboxImg;
+      : projectInfo.img === "mail"
+      ? mailboxImg
+      : jobquestImg;
 
   return (
     <div className="p-5 group bg-stone-50 rounded-lg transition ease-in-out delay-400 duration-700 shadow-md hover:scale-105 hover:shadow-xl">
@@ -31,7 +33,7 @@ const SingleProject = (props) => {
               live site
             </a>
             <a
-              href= {projectInfo.sourceCode}
+              href={projectInfo.sourceCode}
               className="bg-blue-200 text-gray-900 px-2 py-1 inline-block text-xl rounded-sm capitalize"
             >
               source code
@@ -46,7 +48,9 @@ const SingleProject = (props) => {
           </h1>
           <div className="mt-3">
             {projectInfo.technologies.map((item, index) => (
-              <span key={index}  className="bg-slate-400 px-2 me-1 rounded-sm">{item}</span>
+              <span key={index} className="bg-slate-400 px-2 me-1 rounded-sm">
+                {item}
+              </span>
             ))}
           </div>
         </div>

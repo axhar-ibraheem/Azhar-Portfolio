@@ -1,39 +1,41 @@
 import { FaBars, FaFolderOpen, FaHome } from "react-icons/fa";
 import { BiSolidContact } from "react-icons/bi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
-import { GrTechnology } from "react-icons/gr";
-import { GiCrossMark, GiToolbox } from "react-icons/gi"; 
-import { useState } from "react";
-import logo from "../assets/icons8-a-96.png"
+import { GiCrossMark, GiToolbox } from "react-icons/gi";
+import { useState, useEffect } from "react";
+import logo from "../assets/logo.png";
 const navLinks = [
   {
     id: "#home",
     title: "home",
-    icon: <FaHome  className="text-2xl text-yellow-800 inline-block"/>
+    icon: <FaHome className="text-2xl text-yellow-800 inline-block" />,
   },
   {
     id: "#about",
     title: "about",
-    icon: <BiSolidContact className="text-2xl  text-yellow-800 inline-block"/>
+    icon: <BiSolidContact className="text-2xl  text-yellow-800 inline-block" />,
   },
   {
     id: "#skills",
     title: "skills",
-    icon: <GiToolbox className="text-2xl  text-yellow-800 inline-block"/>
+    icon: <GiToolbox className="text-2xl  text-yellow-800 inline-block" />,
   },
   {
     id: "#projects",
     title: "projects",
-    icon : <FaFolderOpen className="text-2xl  text-yellow-800 inline-block"/>
+    icon: <FaFolderOpen className="text-2xl  text-yellow-800 inline-block" />,
   },
   {
     id: "#contact",
     title: "contact",
-    icon: <BsFillPersonLinesFill className="text-2xl  text-yellow-800 inline-block"/>
+    icon: (
+      <BsFillPersonLinesFill className="text-2xl  text-yellow-800 inline-block" />
+    ),
   },
 ];
 const Navbar = () => {
   const [show, setShow] = useState(false);
+  const [scrollingUp, setScrollingUp] = useState(false);
   const sidebarHandler = () => {
     setShow((preVal) => !preVal);
   };
@@ -47,14 +49,29 @@ const Navbar = () => {
       });
     }
   };
+ 
 
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollingUp(window.scrollY > 0);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
     <>
-      <nav className="h-16 fixed w-full flex align-middle z-10  bg-gradient-to-r  from-stone-100 to-stone-200 shadow-violet-200 shadow-md">
+      <nav
+        className={`h-16 ${
+          scrollingUp ? "bg-white shadow-md" : "bg-transparent"
+        } transition duration-150 delay-50 ease-linear fixed w-full flex align-middle z-10`}
+      >
         <div className="max-w-6xl w-11/12 mx-auto flex items-center justify-between">
           <div>
             <h2 className="text-3xl font-bold text-yellow-800 drop-shadow-md tracking-wider ">
-              <img src={logo} className="w-9" alt=""  /> <span className="text-3xl text-blue-700"></span>
+              <img src={logo} className="w-9" alt="" />{" "}
+              <span className="text-3xl text-blue-700"></span>
             </h2>
           </div>
           <ul className="place-items-center px-3 md:flex hidden gap-10">
@@ -99,7 +116,6 @@ const Navbar = () => {
               </p>
             </li>
           ))}
-          
         </ul>
         <div className="absolute top-3 right-3">
           <GiCrossMark

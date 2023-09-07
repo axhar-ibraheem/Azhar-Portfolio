@@ -17,6 +17,13 @@ const projects = [
     sourceCode: "https://github.com/axhar-ibraheem/React-Ecommerce-App"
   },
   {
+    title: "JobQuest",
+    technologies: ["React", "HTML", "Tailwind"],
+    img: "jobquest",
+    link : "https://jobquest-axhar.netlify.app/",
+    sourceCode : "https://github.com/axhar-ibraheem/JobQuest_Vite"
+  },
+  {
     title: "Expense Tracker",
     technologies: ["React", "HTML", "React Bootstrap"],
     img: "expense",

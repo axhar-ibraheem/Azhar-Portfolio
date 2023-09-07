@@ -4,6 +4,17 @@ import { BsGithub, BsLinkedin, BsTwitter } from "react-icons/bs";
 import { SiHashnode } from "react-icons/si";
 const PersonalInfo = () => {
   const classname = "h-screen flex items-center bg-slate-50";
+
+  const scrollToSection = (sectionId, gap) => {
+    const currentSection = document.querySelector(sectionId);
+    if (currentSection) {
+      const targetPosition = currentSection.offsetTop - gap;
+      window.scrollTo({
+        top: targetPosition,
+        behavior: "smooth",
+      });
+    }
+  };
   return (
     <Wrapper id="home" classes={classname}>
       <div className="grid relative h-3/4 lg:ps-12 lg:pe-12 rounded-3xl lg:bg-blue-100 lg:grid-cols-2 place-content-center items-center max-w-6xl w-11/12 mx-auto py-6 lg:shadow-lg">
@@ -19,7 +30,7 @@ const PersonalInfo = () => {
           </span>
 
           <div>
-            <button className="px-7 animate-bounce rounded-md uppercase font-semibold  text-red-100 tracking-wider hover:bg-violet-950  py-3 bg-violet-900 text-xl mt-9">
+            <button onClick={() => scrollToSection( "#contact", 4 * 16)} className="px-7 animate-bounce rounded-md uppercase font-semibold  text-red-100 tracking-wider hover:bg-violet-950  py-3 bg-violet-900 text-xl mt-9">
               hire me
             </button>
           </div>
