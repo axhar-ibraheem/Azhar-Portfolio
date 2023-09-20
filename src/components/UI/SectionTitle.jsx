@@ -7,7 +7,7 @@ const SectionTitle = (props) => {
       <span>
         {icon}
       </span>
-      <h2 className="capitalize text-4xl tracking-wider pb-2 font-bold">
+      <h2 className="capitalize text-4xl tracking-wider font-bold">
         {title}
       </h2>
     </div>

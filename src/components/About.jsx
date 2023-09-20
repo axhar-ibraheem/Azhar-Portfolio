@@ -8,7 +8,7 @@ const About = () => {
       <div className="max-w-6xl w-11/12 mx-auto grid gap-4 lg:grid-cols-2 items-center relative h-3/4  rounded-3xl py-6">
      
         <div>
-          <SectionTitle classes="text-center mb-9" title="about me" icon = {<BsPersonCircle className="text-3xl text-cyan-950"/>} />
+          <SectionTitle classes="text-center mb-9" title="about me" icon = {<BsPersonCircle className="text-4xl text-cyan-950"/>} />
           <p className="text-2xl capitalize font-semibold text-cyan-900 mb-4">
             get to know me!
           </p>
