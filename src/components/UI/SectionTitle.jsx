@@ -1,10 +1,15 @@
+import {BsFillLaptopFill} from 'react-icons/bs'
 const SectionTitle = (props) => {
+  const {title, classes, icon} = props
+  console.log(icon)
   return (
-    <div className={`${props.classes}`}>
-      <h2 className="capitalize text-4xl tracking-wider pb-2 font-bold text-cyan-950">
-        {props.title}
+    <div className={`flex justify-center gap-3 items-center ${classes}`}>
+      <span>
+        {icon}
+      </span>
+      <h2 className="capitalize text-4xl tracking-wider pb-2 font-bold">
+        {title}
       </h2>
-      <div className="w-20 mx-auto mt-1 h-1 bg-amber-700"></div>
     </div>
   );
 };

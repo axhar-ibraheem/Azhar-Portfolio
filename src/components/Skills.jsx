@@ -11,7 +11,7 @@ import {
   BiLogoGithub,
 } from "react-icons/bi";
 import { SiReactrouter } from "react-icons/si";
-import { FaBootstrap } from "react-icons/fa";
+import { FaBootstrap, FaTools } from "react-icons/fa";
 import Wrapper from "./UI/Wrapper";
 import SectionTitle from "./UI/SectionTitle";
 const skills = [
@@ -78,13 +78,16 @@ const skills = [
 ];
 const Skills = () => {
   return (
-    <Wrapper id="skills" classes="bg-purple-100 py-10">
-      <SectionTitle classes="text-center lg:mb-5" title="skills" />
-      <div className="lg:flex grid grid-cols-2 lg:flex-wrap max-w-6xl w-11/12 mx-auto content-center items-center h-3/4 lg:py-10 mt-6 gap-4 md:gap-10">
+    <Wrapper id="skills" classes="bg-purple-500 py-10 ">
+      <SectionTitle classes="text-center lg:mb-5" title="skills" icon={<FaTools className="text-3xl text-white"/>}/>
+      <div className="grid lg:grid-cols-3 grid-cols-2  max-w-4xl w-11/12 mx-auto content-center items-center h-3/4 lg:py-10 mt-6 gap-4 md:gap-10">
         {skills.map((skill, index) => (
-          <div key={index} className="md:mb-5">
-            <p className="text-left font-bold text-gray-800 md:text-2xl mb-2 capitalize">
-              <span>{skill.icon}</span>
+          <div
+            key={index}
+            className="grid items-center justify-center bg-stone-200 rounded-md p-2 shadow-lg text-center"
+          >
+            <span>{skill.icon}</span>
+            <p className="font-bold text-gray-800 md:text-2xl capitalize">
               {skill.title}
             </p>
           </div>

@@ -3,10 +3,11 @@ import Wrapper from "./UI/Wrapper";
 import SectionTitle from "./UI/SectionTitle";
 import { MdOutgoingMail } from "react-icons/md";
 import { BsTelephoneFill } from "react-icons/bs";
+import {FaHandshake} from "react-icons/fa"
 const Contact = () => {
   return (
     <Wrapper id="contact" classes="bg-amber-100 py-10">
-      <SectionTitle classes="text-center mb-5" title="Contact" />
+      <SectionTitle classes="text-center mb-5" title="Contact" icon = {<FaHandshake className="text-4xl text-yellow-950"/>} />
       <div className="max-w-6xl w-11/12 mx-auto rounded-3xl h-3/4 lg:py-10">
         <div className="max-w-2xl flex justify-center items-center p-5 mx-auto lg:w-2/5 h-[20rem] lg:h-[26rem] bg-white shadow-lg rounded-lg">
           <div className="text-center">
