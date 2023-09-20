@@ -5,7 +5,7 @@ import {BsPersonCircle} from "react-icons/bs"
 const About = () => {
   return (
     <Wrapper id="about" classes="py-10 bg-green-100">
-      <div className="max-w-6xl w-11/12 mx-auto grid gap-4 lg:grid-cols-2 items-center relative h-3/4  rounded-3xl py-6">
+      <div className="max-w-6xl w-11/12 mx-auto grid gap-4 lg:grid-cols-2 items-center relative h-3/4  rounded-3xl ">
      
         <div>
           <SectionTitle classes="text-center mb-9" title="about me" icon = {<BsPersonCircle className="text-4xl text-cyan-950"/>} />
