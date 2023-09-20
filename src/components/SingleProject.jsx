@@ -45,8 +45,8 @@ const SingleProject = (props) => {
           </div>
         </div>
 
-        <div className="mt-4 p-3 h-full bg-orange-900">
-          <h1 className="capitalize text-xl text-white font-semibold">
+        <div className="mt-4 p-3 h-full bg-slate-100">
+          <h1 className="capitalize text-xl text-gray-900 font-semibold">
             {projectInfo.title}
           </h1>
           <div className="mt-3">
