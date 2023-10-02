@@ -7,7 +7,7 @@ const PersonalInfo = () => {
   const classname = "h-screen flex items-center bg-slate-50";
   const cursor = <div className="h-5 inline-block w-[0.2rem] bg-black"></div>;
   const [text] = useTypewriter({
-    words: ["Frontend Developer."],
+    words: ["Frontend Development.", "Responsive Design.", "Web Performance Optimization.", "Problem Solving."],
     loop: {},
   });
   const scrollToSection = (sectionId, gap) => {
@@ -25,14 +25,14 @@ const PersonalInfo = () => {
   };
   return (
     <Wrapper id="home" classes={classname}>
-      <div className="grid relative h-3/4 lg:ps-12 lg:pe-12 rounded-3xl lg:bg-blue-100 lg:grid-cols-2 place-content-center items-center max-w-6xl w-11/12 mx-auto py-6 lg:shadow-lg">
+      <div className="grid relative h-3/4 lg:ps-12 lg:pe-12 rounded-3xl lg:bg-white lg:grid-cols-2 place-content-center items-center max-w-6xl w-11/12 mx-auto py-6 lg:shadow-lg">
         <div className="text-center lg:text-start overflow-hidden">
           <h1 className="text-4xl lg:text-5xl mb-3 tracking-wider text-cyan-950 font-bold">
             Hi! I am Azhar.
           </h1>
           <div className="mb-4">
-            <span className="text-2xl tracking-wider overflow-hidden text-indigo-900 font-bold capitalize">
-              {text}
+            <span className="text-2xl tracking-wider overflow-hidden text-orange-700 font-bold capitalize">
+            <span className="text-cyan-950 block lg:inline">I am into</span>   {text}
             </span>
             <Cursor cursorColor="black" cursorStyle={cursor} />
           </div>
@@ -63,15 +63,15 @@ const PersonalInfo = () => {
               <SiHashnode className="text-indigo-800" />
             </a>
           </div>
-          <div className="w-20  hidden lg:block absolute top-0 -left-4 h-20 bg-cyan-950 opacity-70 rotate-45 rounded-2xl"></div>
-          <div className="w-20 hidden lg:block absolute top-0 -right-4 h-20 bg-violet-800 opacity-70 rounded-full"></div>
+          <div className="w-20 shadow-2xl hidden lg:block absolute top-0 -left-4 h-20 bg-cyan-950 opacity-70 rotate-45 rounded-2xl"></div>
+          <div className="w-20 hidden lg:block shadow-3xl shadow-red-600 absolute top-0 -right-4 h-20 bg-violet-800 opacity-70 rounded-full"></div>
           <div className="w-20 hidden lg:block absolute -end-5 bottom-0 right-0 h-20 bg-violet-400 opacity-70 rounded-es-full"></div>
         </div>
         <div className="">
           <img className="hidden lg:block" src={personalImg} alt="" />
         </div>
       </div>
-      <div className="lg:grid hidden grid-rows-4 absolute gap-8 shadow-md ps-5 py-5 w-16 bg-emerald-100 text-cyan-950 text-2xl">
+      <div className="lg:grid hidden grid-rows-4 absolute gap-8 shadow-md ps-5 py-5 w-16  text-cyan-950 bg-violet-100 text-2xl">
         <a href="https://github.com/axhar-ibraheem">
           <BsGithub className="text-sky-800" />
         </a>
