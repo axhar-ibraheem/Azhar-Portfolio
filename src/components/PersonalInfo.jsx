@@ -7,7 +7,7 @@ const PersonalInfo = () => {
   const classname = "h-screen flex items-center bg-slate-50";
   const cursor = <div className="h-5 inline-block w-[0.2rem] bg-black"></div>;
   const [text] = useTypewriter({
-    words: ["Frontend Development.", "Responsive Design.", "Web Performance Optimization.", "Problem Solving."],
+    words: ["Frontend Development.", "Responsive Design.", "Problem Solving."],
     loop: {},
   });
   const scrollToSection = (sectionId, gap) => {
