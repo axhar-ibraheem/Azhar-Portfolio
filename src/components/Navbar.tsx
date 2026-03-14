@@ -1,46 +1,17 @@
-import { FaBars, FaFolderOpen, FaHome } from "react-icons/fa";
-import { BiSolidContact } from "react-icons/bi";
-import { BsFillPersonLinesFill } from "react-icons/bs";
-import { GiCrossMark, GiToolbox } from "react-icons/gi";
+import { FaBars } from "react-icons/fa";
+import { GiCrossMark } from "react-icons/gi";
 import { useState, useEffect } from "react";
 import logo from "../assets/logo.png";
-const navLinks = [
-  {
-    id: "#home",
-    title: "home",
-    icon: <FaHome className="text-2xl text-yellow-800 inline-block" />,
-  },
-  {
-    id: "#about",
-    title: "about",
-    icon: <BiSolidContact className="text-2xl  text-yellow-800 inline-block" />,
-  },
-  {
-    id: "#skills",
-    title: "skills",
-    icon: <GiToolbox className="text-2xl  text-yellow-800 inline-block" />,
-  },
-  {
-    id: "#projects",
-    title: "projects",
-    icon: <FaFolderOpen className="text-2xl  text-yellow-800 inline-block" />,
-  },
-  {
-    id: "#contact",
-    title: "contact",
-    icon: (
-      <BsFillPersonLinesFill className="text-2xl  text-yellow-800 inline-block" />
-    ),
-  },
-];
+import { navLinks } from "../data/navLinks.data";
+
 const Navbar = () => {
-  const [show, setShow] = useState(false);
-  const [scrollingUp, setScrollingUp] = useState(false);
-  const sidebarHandler = () => {
+  const [show, setShow] = useState<boolean>(false);
+  const [scrollingUp, setScrollingUp] = useState<boolean>(false);
+  const sidebarHandler = (): void => {
     setShow((preVal) => !preVal);
   };
-  const scrollToSection = (sectionId, gap) => {
-    const currentSection = document.querySelector(sectionId);
+  const scrollToSection = (sectionId: string, gap: number) => {
+    const currentSection = document.querySelector<HTMLElement>(sectionId);
     if (currentSection) {
       const targetPosition = currentSection.offsetTop - gap;
       window.scrollTo({
@@ -49,7 +20,6 @@ const Navbar = () => {
       });
     }
   };
- 
 
   useEffect(() => {
     const handleScroll = () => {
@@ -103,7 +73,7 @@ const Navbar = () => {
           {navLinks.map((navlink) => (
             <li
               onClick={() => {
-                scrollToSection(`${navlink.id}`, 4 * 16), setShow(false);
+                (scrollToSection(`${navlink.id}`, 4 * 16), setShow(false));
               }}
               key={navlink.id}
               className="text-xl ps-5 py-2 cursor-pointer transition ease-in-out delay-400 duration-700 hover:bg-indigo-100"

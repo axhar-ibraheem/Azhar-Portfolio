@@ -18,11 +18,6 @@ This portfolio website serves as a digital showcase of my web development projec
 - React
 - Tailwind CSS
 
-
-
-
-
-
 ## 🌟 Contact
 
 Feel free to connect with me on [LinkedIn](https://www.linkedin.com/in/axhar/) or [Twitter](https://twitter.com/axhar_0). You can also visit my [portfolio website](https://azhar-ibraheem.netlify.app/) to learn more about my work and get in touch.

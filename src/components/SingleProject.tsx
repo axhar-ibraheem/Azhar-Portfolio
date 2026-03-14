@@ -3,19 +3,22 @@ import buttongeneratorImg from "../assets/button-generator.png";
 import mailboxImg from "../assets/mail-box.png";
 import expenseTrackerImg from "../assets/expense-tracker.png";
 import jobquestImg from "../assets/jobquest.png";
-const SingleProject = (props) => {
-  const { projectInfo } = props;
-  const img =
-    projectInfo.img === "button"
-      ? buttongeneratorImg
-      : projectInfo.img === "ecommerce"
-      ? eccomerceImg
-      : projectInfo.img === "expense"
-      ? expenseTrackerImg
-      : projectInfo.img === "mail"
-      ? mailboxImg
-      : jobquestImg;
+import { ProjectInfo } from "../data/projects.data";
 
+interface SingleProjectProps {
+  projectInfo: ProjectInfo;
+}
+
+const imgMap: Record<ProjectInfo["img"], string> = {
+  button: buttongeneratorImg,
+  ecommerce: eccomerceImg,
+  expense: expenseTrackerImg,
+  mail: mailboxImg,
+  jobquest: jobquestImg,
+};
+
+const SingleProject = ({ projectInfo }: SingleProjectProps) => {
+  const img = imgMap[projectInfo.img];
   return (
     <div className="group bg-gray-800 transition ease-in-out delay-400 duration-700 shadow-xl rounded-lg overflow-hidden hover:scale-105 hover:shadow-xl">
       <div className="grid">
@@ -36,7 +39,7 @@ const SingleProject = (props) => {
             </div>
             <div>
               <a
-                href={projectInfo.sourceCode}
+                href={projectInfo.sourceCodeLink}
                 className="bg-blue-200 text-gray-900 px-2 py-1 text-xl rounded-sm capitalize"
               >
                 source code
