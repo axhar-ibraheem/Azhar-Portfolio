@@ -1,7 +1,7 @@
 export interface ProjectInfo {
   title: string;
   technologies: string[];
-  img: "button" | "ecommerce" | "expense" | "mail" | "jobquest";
+  img: "ecommerce" | "expense" | "mail" | "jobquest";
   link: string;
   sourceCodeLink: string;
 }

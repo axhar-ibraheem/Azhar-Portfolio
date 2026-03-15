@@ -1,0 +1,13 @@
+# Dependencies
+node_modules
+
+# Build output
+dist
+build
+
+# Auto-generated
+coverage
+
+# Config files that don't need formatting
+*.config.js
+*.config.ts

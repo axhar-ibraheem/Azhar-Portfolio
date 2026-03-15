@@ -6,10 +6,11 @@ import { navLinks } from "../data/navLinks.data";
 
 const Navbar = () => {
   const [show, setShow] = useState<boolean>(false);
-  const [scrollingUp, setScrollingUp] = useState<boolean>(false);
+  const [hasScrolled, setHasScrolled] = useState<boolean>(false);
   const sidebarHandler = (): void => {
     setShow((preVal) => !preVal);
   };
+
   const scrollToSection = (sectionId: string, gap: number) => {
     const currentSection = document.querySelector<HTMLElement>(sectionId);
     if (currentSection) {
@@ -23,7 +24,7 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      setScrollingUp(window.scrollY > 0);
+      setHasScrolled(window.scrollY > 0);
     };
     window.addEventListener("scroll", handleScroll);
     return () => {
@@ -34,7 +35,7 @@ const Navbar = () => {
     <>
       <nav
         className={`h-16 ${
-          scrollingUp ? "bg-white shadow-md" : "bg-transparent"
+          hasScrolled ? "bg-white shadow-md" : "bg-transparent"
         } transition duration-150 delay-50 ease-linear fixed w-full flex align-middle z-10`}
       >
         <div className="max-w-6xl w-11/12 mx-auto flex items-center justify-between">

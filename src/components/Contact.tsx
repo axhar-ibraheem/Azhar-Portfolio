@@ -6,7 +6,7 @@ import { BsTelephoneFill } from "react-icons/bs";
 import { FaHandshake } from "react-icons/fa";
 const Contact = () => {
   return (
-    <Wrapper id="contact" classNames="bg-amber-100 py-10">
+    <Wrapper id="contact" classNames="bg-neutral-300 py-10">
       <SectionTitle
         classNames="text-center mb-5"
         title="Contact"

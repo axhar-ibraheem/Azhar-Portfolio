@@ -5,11 +5,11 @@ import { skills } from "../data/skills.data";
 
 const Skills = () => {
   return (
-    <Wrapper id="skills" classNames="bg-purple-300 py-10 ">
+    <Wrapper id="skills" classNames="bg-gray-400 py-10 ">
       <SectionTitle
         classNames="text-center lg:mb-5"
         title="skills"
-        icon={<FaTools className="text-3xl text-white" />}
+        icon={<FaTools className="text-3xl text-orange-950" />}
       />
       <div className="grid lg:grid-cols-3 grid-cols-2  max-w-4xl w-11/12 mx-auto content-center items-center h-3/4 lg:py-10 mt-6 gap-4 md:gap-10">
         {skills.map((skill, index) => (
