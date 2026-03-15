@@ -15,6 +15,7 @@ import {
 } from "react-icons/bi";
 
 import { SiReactrouter } from "react-icons/si";
+import { FcLinux } from "react-icons/fc";
 
 interface Skill {
   title: string;
@@ -73,6 +74,10 @@ export const skills: Skill[] = [
   {
     title: "Redux",
     icon: <BiLogoRedux className="text-6xl text-purple-500 px-2 inline pe-2" />,
+  },
+  {
+    title: "Linux",
+    icon: <FcLinux className="text-6xl text-purple-500 px-2 inline pe-2" />,
   },
   {
     title: "Git",
