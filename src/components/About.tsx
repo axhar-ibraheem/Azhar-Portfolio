@@ -24,8 +24,7 @@ const About = () => {
             through my proficiency in HTML, CSS, and JavaScript, along with
             expertise in React, routing, and Redux. Dedicated to delivering
             modern, responsive websites and committed to optimizing performance
-            and accessibility. I am Seeking opportunities to contribute and grow
-            in a dynamic team.
+            and accessibility.
           </p>
         </div>
         <img

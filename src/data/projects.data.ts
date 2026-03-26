@@ -15,7 +15,7 @@ export const projects: ProjectInfo[] = [
     sourceCodeLink: "https://github.com/axhar-ibraheem/React-Ecommerce-App",
   },
   {
-    title: "JobQuest",
+    title: "Job Quest Dashboard",
     technologies: ["React", "HTML", "Tailwind"],
     img: "jobquest",
     link: "https://jobquest-axhar.netlify.app/",
