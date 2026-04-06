@@ -6,7 +6,7 @@ import { projects } from "../data/projects.data";
 
 const Projects = () => {
   return (
-    <Wrapper id="projects" classNames="bg-violet-200 py-10">
+    <Wrapper id="projects" classNames="bg-stone-100 py-10">
       <SectionTitle
         classNames="text-center mb-5"
         title="projects"
