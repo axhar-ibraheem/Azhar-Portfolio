@@ -24,7 +24,7 @@ export const projects: ProjectInfo[] = [
   },
   {
     title: "Finance Dashboard",
-    technologies: ["React", "TypeScript", "Redux Toolkit", "Tailwind CSS"],
+    technologies: ["React", "TypeScript", "Redux Toolkit"],
     img: "finance-dashboard",
     link: "https://fintrack-axhar.netlify.app/",
     sourceCodeLink: "https://github.com/axhar-ibraheem/finTrack",
