@@ -1,19 +1,20 @@
 export interface ProjectInfo {
   title: string;
   technologies: string[];
-  img: "ecommerce" | "expense" | "mail" | "jobquest";
+  img: "ecommerce" | "finance-dashboard" | "mail" | "jobquest";
   link: string;
   sourceCodeLink: string;
 }
 
 export const projects: ProjectInfo[] = [
   {
-    title: "Ecommerce App",
+    title: "MailBox Client",
     technologies: ["React", "HTML", "React Bootstrap"],
-    img: "ecommerce",
-    link: "https://ecommerce-app-axhar.netlify.app/home",
-    sourceCodeLink: "https://github.com/axhar-ibraheem/React-Ecommerce-App",
+    img: "mail",
+    link: "https://mailbox-client-axhar.netlify.app/auth",
+    sourceCodeLink: "https://github.com/axhar-ibraheem/React-Mailbox-client",
   },
+
   {
     title: "Job Quest Dashboard",
     technologies: ["React", "HTML", "Tailwind"],
@@ -22,17 +23,17 @@ export const projects: ProjectInfo[] = [
     sourceCodeLink: "https://github.com/axhar-ibraheem/JobQuest_Vite",
   },
   {
-    title: "Expense Tracker",
-    technologies: ["React", "HTML", "React Bootstrap"],
-    img: "expense",
-    link: "https://expense-tracker-axhar.netlify.app/",
-    sourceCodeLink: "https://github.com/axhar-ibraheem/React-Expense-Tracker",
+    title: "Finance Dashboard",
+    technologies: ["React", "TypeScript", "Redux Toolkit", "Tailwind CSS"],
+    img: "finance-dashboard",
+    link: "https://fintrack-axhar.netlify.app/",
+    sourceCodeLink: "https://github.com/axhar-ibraheem/finTrack",
   },
   {
-    title: "MailBox Client",
+    title: "Ecommerce App",
     technologies: ["React", "HTML", "React Bootstrap"],
-    img: "mail",
-    link: "https://mailbox-client-axhar.netlify.app/auth",
-    sourceCodeLink: "https://github.com/axhar-ibraheem/React-Mailbox-client",
+    img: "ecommerce",
+    link: "https://ecommerce-app-axhar.netlify.app/home",
+    sourceCodeLink: "https://github.com/axhar-ibraheem/React-Ecommerce-App",
   },
 ];

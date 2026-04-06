@@ -1,6 +1,6 @@
 import eccomerceImg from "../assets/ecommere.png";
 import mailboxImg from "../assets/mail-box.png";
-import expenseTrackerImg from "../assets/expense-tracker.png";
+import financeDashboardImg from "../assets/finance-dashboard.png";
 import jobquestImg from "../assets/jobquest.png";
 import { ProjectInfo } from "../data/projects.data";
 
@@ -10,7 +10,7 @@ interface SingleProjectProps {
 
 const imgMap: Record<ProjectInfo["img"], string> = {
   ecommerce: eccomerceImg,
-  expense: expenseTrackerImg,
+  "finance-dashboard": financeDashboardImg,
   mail: mailboxImg,
   jobquest: jobquestImg,
 };
@@ -29,10 +29,12 @@ const SingleProject = ({ projectInfo }: SingleProjectProps) => {
           <div className="absolute grid grid-rows-2 gap-3 border-cyan-900 transition ease-in-out delay-400 duration-700 opacity-0 group-hover:opacity-100 z-10 top-[50%] left-[50%] translate-y-[-50%] translate-x-[-50%] text-center">
             <div>
               <a
+                target="_blank"
+                rel="noopener noreferrer"
                 href={projectInfo.link}
                 className="bg-blue-200 text-gray-900 px-2 py-1 text-xl rounded-sm capitalize mb-3"
               >
-                live site
+                live demo
               </a>
             </div>
             <div>

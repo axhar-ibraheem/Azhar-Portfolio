@@ -2,8 +2,9 @@ import Wrapper from "./UI/Wrapper";
 import SectionTitle from "./UI/SectionTitle";
 import { MdOutgoingMail } from "react-icons/md";
 import { BsTelephoneFill } from "react-icons/bs";
-
 import { FaHandshake } from "react-icons/fa";
+
+
 const Contact = () => {
   return (
     <Wrapper id="contact" classNames="bg-neutral-300 py-10">
